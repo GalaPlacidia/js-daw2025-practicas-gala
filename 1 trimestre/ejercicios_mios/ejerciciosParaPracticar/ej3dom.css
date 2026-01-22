@@ -1,0 +1,14 @@
+div {
+  border: 1px solid black;
+  padding: 1em;
+  position: fixed;
+  top: 20px;
+  width: 200px;
+  height: 100px;
+}
+#uno {
+  left: 50px;
+}
+#dos {
+  left: 400px;
+}

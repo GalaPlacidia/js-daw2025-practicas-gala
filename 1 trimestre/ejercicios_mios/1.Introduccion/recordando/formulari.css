@@ -1,0 +1,24 @@
+form{
+  
+    display:flex;
+     flex-direction: column;
+     gap:5px;
+     width:50%;
+     margin:10%;
+
+}
+#fecha{
+    display:flex;
+    flex-direction:row;
+}
+
+#soy{
+    display:flex;
+    flex-direction:row;
+}
+
+
+#negrita{
+    font-size: large;
+    font-weight:bold;
+}

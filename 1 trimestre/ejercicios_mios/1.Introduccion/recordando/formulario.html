@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulari.css">
+</head>
+<body>
+    
+<form action="login.php" method="get" name="formulario1.1">
+  <legend id="negrita">Formulari d´inscripció Cyberwall</legend>
+  <label for="nombre">Name:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Nom i cognoms" required>
+
+  <label for="nombreUsuario">Create a user name:</label>
+  <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+
+  <label for="contraseña">Create a password:</label>
+  <input type="password" id="contraseña" name="contraseña" min="6" max="12" required>
+
+  <label for="cumpleaños">Birthday:</label>
+  <input type="date" id="fecha" name="cumpleaños" placeholder="dd/ mm/ aaaa">
+
+  <label for="soy">I am</label>
+
+  <select nombre="profesion">
+    <option selected value="a student">a student</option>
+    <option selected value="profesor">a teacher</option>
+    <option selected value="empresario">a business owner</option>
+    <option selected value="autónomo">a self-employed</option>
+    <option selected value="otro">other</option>
+ </select><br><br>
+
+ <label for="móvil">Mobile phone:</label>
+  <input type="tel" id="móvil" name="móvil" required>
+
+  <label for="inglés">Select your English level:</label>
+  <input type="range" id="inglés" name="inglés" min="0" max="10" value="5" >
+
+
+
+
+  <input type="submit" value="Sign me up">
+</form>
+
+
+</body>
+</html>

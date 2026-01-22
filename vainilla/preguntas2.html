@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="1">
+      <form>
+        <label for="preguntas">Pregunta:</label>
+        <input type="text" id="preguntas" name="pregunta" required />
+        <br />
+        <label for="verdad">Verdadero</label>
+        <input type="radio" id="v" name="verdaderoFalso" value="v" />
+        <label for="falsedad">Falso</label>
+        <input type="radio" id="f" name="verdaderoFalso" value="f" />
+        <br />
+        <label for="puntuación">Puntuación:</label>
+        <input type="text" id="puntuacion" name="puntuacion" required />
+        <button id="atras" type="button">Atrás</button>
+        <button id="grabar" type="button">Grabar</button>
+      </form>
+    </div>
+
+    <table id="2">
+      <tr>
+        <th>Pregunta</th>
+        <th>Respuesta</th>
+        <th>Puntuación</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td id="pregunta2"></td>
+        <td id="respuesta2"></td>
+        <td id="puntuacion2"></td>
+        <td id="estado"></td>
+      </tr>
+    </table>
+
+    <script src="preguntas2.js"></script>
+  </body>
+</html>

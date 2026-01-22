@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 9</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Formulario de inscripción Cyberwall</h1>
+    <form style="display: flex; flex-direction: column; width: fit-content;">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label for="username">Create a user name:</label>
+        <input type="text" name="username" required>
+        <label for="password">Create a password:</label>
+        <input type="password" name="password" required minlength="6" maxlength="12">
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday">
+        <label for="select">I am</label>
+
+        <select name="select">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="student">a student</option>
+            <option value="teacher">a teacher</option>
+            <option value="business-owner">a business owner</option>
+            <option value="selt-employed">self-employed</option>
+            <option value="other">other</option>
+        </select>
+
+        <label for="phone">Mobile phone:</label>
+        <input type="tel" name="phone" required>
+        <label for="level-english">Select your English level (0-10):</label>
+        <input type="range" name="level-english" min="0" max="10">
+        <input type="submit" value="Sing me up">
+    </form>
+
+</body>
+
+</html>
