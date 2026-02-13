@@ -1,0 +1,5 @@
+1. npm install -g serve
+
+2. entrar en la carpeta browser del proyecto
+
+3.serve

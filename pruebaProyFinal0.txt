@@ -1,0 +1,30 @@
+async function obtenerDatos() {
+  try {
+    const response = await fetch('php/todos_productos.php');
+    if (!response.ok) {
+      throw new Error(`Error HTTP: ${response.status}`);
+    }
+    const data = await response.json(); //array con los datos
+    //console.log('Datos:', data);
+
+    for (let i = 0; i < data.length; i++) {
+      let nuevoDiv;
+      let nuevoDiv2;
+
+      nuevoDiv = document.createElement('div'); //CREO DIV
+      nuevoDiv2 = document.createElement('div');
+
+      nuevoDiv.innerHTML =
+        data[i].nombre + ' ' + data[i].foto + ' ' + data[i].precio;
+      //añado datos al div
+
+      nuevoDiv2.innerHTML = data[i].cantidad + ' ' + '+';
+
+      document.getElementById('items').appendChild(nuevoDiv);
+      document.getElementById('items').appendChild(nuevoDiv2);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+obtenerDatos();

@@ -1,0 +1,3 @@
+Crea una aplicación en Angular que ponga Welcome to [tu_nombre]
+
+Genera el bundle (paquete) de la aplicación y sube solo la carpeta dist
